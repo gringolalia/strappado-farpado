@@ -1,0 +1,8 @@
+{
+	"name": "farpado",
+	"version": "1.0.0",
+	"description": "Harp Chants Heroku Daimoku",
+	"dependencies": {
+	  "harp": "*"
+	}
+  }
