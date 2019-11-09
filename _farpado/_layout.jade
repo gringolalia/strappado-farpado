@@ -42,6 +42,34 @@ html
 			}
 
 	body
+
+		nav.navbar.navbar-expand-lg.navbar-light.bg-light
+			a.navbar-brand(href='#') 
+				i.fas.fa-sun.fa-2x.mr-2
+				| Engenho Novo LLP
+			button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+				span.navbar-toggler-icon
+			.collapse.navbar-collapse#navbarSupportedContent
+				ul.navbar-nav.mr-auto
+					li.nav-item.active
+						a.nav-link(href='#')
+							| Lares 
+							span.sr-only (current)
+					li.nav-item
+						a.nav-link(href='#') Penates
+					li.nav-item.dropdown
+						a.nav-link.dropdown-toggle#navbarDropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Suspensa							
+						.dropdown-menu(aria-labelledby='navbarDropdown')
+							a.dropdown-item(href='#') Agindo
+							a.dropdown-item(href='#') Reagindo
+							.dropdown-divider
+							a.dropdown-item(href='#') Sofrendo
+					li.nav-item
+						a.nav-link.disabled(href='#') Invalidez
+				form.form-inline.my-2.my-lg-0
+					input.form-control.mr-sm-2(type='search' placeholder='Curiosidade' aria-label='Search')
+					button.btn.btn-outline-secondary.active.my-2.my-sm-0(type='submit') Enviar
+
 		!= yield
 
 		script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous')
