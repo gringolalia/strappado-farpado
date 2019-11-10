@@ -1,8 +1,0 @@
-{
-	"name": "farpado",
-	"version": "1.0.0",
-	"description": "Harpo Farpo a Consonant Drift",
-	"dependencies": {
-	  "harp": "*"
-	}
-  }
