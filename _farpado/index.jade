@@ -9,7 +9,7 @@
 			button.btn.btn-primary.btn-lg.active.mr-2(href='#' role='button' aria-pressed='true') Imprints
 			button.btn.btn-secondary.btn-lg.active.mr-2(href='#' role='button' aria-pressed='true') Offprints
 			.dropdown
-				button.btn.btn-default.btn-lg.dropdown-toggle.active#dropdownMenuButton(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Opções
+				button.btn.btn-info.btn-lg.dropdown-toggle.active.mr-2#dropdownMenuButton(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Opções
 				.dropdown-menu(aria-labelledby='dropdownMenuButton')
 					a.dropdown-item(href='#') Scientology
 					a.dropdown-item(href='#') Meteorology
@@ -21,3 +21,26 @@
 					a.dropdown-item(href='#') Lepidopterology
 					a.dropdown-item(href='#') Nanotechnology
 					a.dropdown-item(href='#') Antitechology
+
+
+			button.btn.btn-dark.btn-lg.active(type='button' data-toggle='modal' data-target='#exampleModal').
+				
+				A Modal T
+				
+			//  Modal 
+			.modal.fade#exampleModal(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+				.modal-dialog.modal-dialog-centered(role='document')
+					.modal-content
+						.modal-header
+							h5.modal-title#exampleModalLabel 
+								i.material-icons.md-36.mr-2 directions_bike
+								| Engenho Novo LLC
+							button.close(type='button' data-dismiss='modal' aria-label='Close')
+								span(aria-hidden='true') &times;
+						.modal-body.
+							
+							vιξ ετ ιμπετθσ θτροqθε δολορεμ. Ει qθισ αλιqθιπ προδεσσετ vιξ. Qθι ερρορ σεμπερ απειριαν νε, εστ τε λαβορε δοcτθσ νεcεσσιτατιβθσ. Ρεqθε σcριπτα νε vιξ, μελ αδ μθνδι cονσεqθατ δεφινιτιονεσ, νεc ποσσε ιισqθε vολθμθσ αν.
+							
+						.modal-footer
+							button.btn.btn-danger.active.mr-2(type='button' data-dismiss='modal') Close
+							button.btn.btn-dark.active(type='button') Save
