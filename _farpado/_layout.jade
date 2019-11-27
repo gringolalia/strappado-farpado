@@ -41,6 +41,22 @@ html
 				margin-top: 100px;
 			}
 
+			.material-icons.md-18 { font-size: 18px; }
+			.material-icons.md-24 { font-size: 24px; }
+			.material-icons.md-36 { font-size: 36px; }
+			.material-icons.md-48 { font-size: 48px; }
+			.material-icons.md-54 { font-size: 54px; }
+			.material-icons.md-66 { font-size: 66px; }
+			.material-icons.md-72 { font-size: 72px; }
+
+			/* Rules for using icons as black on a light background. */
+			.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+			.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+			/* Rules for using icons as white on a dark background. */
+			.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+			.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
 	body
 
 		nav.navbar.navbar-expand-lg.navbar-light.bg-light
@@ -58,14 +74,21 @@ html
 					li.nav-item
 						a.nav-link(href='#') Penates
 					li.nav-item.dropdown
-						a.nav-link.dropdown-toggle#navbarDropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Suspensa							
+						a.nav-link.dropdown-toggle#navbarDropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') 
+							i.material-icons.md-24.mr-2 menu
+							| Paises						
 						.dropdown-menu(aria-labelledby='navbarDropdown')
-							a.dropdown-item(href='#') Agindo
-							a.dropdown-item(href='#') Reagindo
+							a.dropdown-item(href='#') Paraguay
+							a.dropdown-item(href='#') Uruguay
 							.dropdown-divider
-							a.dropdown-item(href='#') Sofrendo
-					li.nav-item
-						a.nav-link.disabled(href='#') Invalidez
+							a.dropdown-item(href='#') Bolivia
+							a.dropdown-item(href='#') Peru
+							a.dropdown-item(href='#') Ecuador
+							a.dropdown-item(href='#') Colombia
+							a.dropdown-item(href='#') Venzuela
+							a.dropdown-item(href='#') Argentina
+					//- li.nav-item
+					//- 	a.nav-link.disabled(href='#') Invalidez
 				form.form-inline.my-2.my-lg-0
 					input.form-control.mr-sm-2(type='search' placeholder='Curiosidade' aria-label='Search')
 					button.btn.btn-outline-secondary.active.my-2.my-sm-0(type='submit') Enviar
